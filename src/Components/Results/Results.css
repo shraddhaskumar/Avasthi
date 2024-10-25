@@ -1,0 +1,89 @@
+/* Results.css */
+.results-container {
+    padding: 60px;
+    background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+      url('../../assets/bg2.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #f1c40f;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #FF6347; /* Tomato color */
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #f2f2f2;
+    margin-top: 20px;
+    text-align: center; /* Center the paragraph text */
+}
+
+button {
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Add some margin to separate from text */
+}
+
+button:hover {
+    background-color: #d4a90c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .results-container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+}

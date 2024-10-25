@@ -1,0 +1,95 @@
+/* src/Components/ModerateStress/ModerateStress.css */
+
+.moderate-stress-container {
+  padding: 60px;
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url('../../assets/bg2.png'); /* Use the same background image */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  text-align: center; /* Centered text */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  color: #fff;
+  font-style: italic;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #f1c40f;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem; /* Slightly smaller than h1 */
+  margin-bottom: 20px;
+  color: #f1c40f; /* Use the same yellow color */
+}
+
+.activity-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.activity-buttons button {
+  font-size: 1 rem;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 0; /* Space between buttons */
+  transition: background-color 0.3s;
+  width: 80%; /* Responsive width */
+  max-width: 400px; /* Max width for buttons */
+}
+
+.activity-buttons button:hover {
+  background-color: #d4a90c; /* Darker yellow on hover */
+}
+
+.video-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 560px; /* Maximum width for the video */
+}
+
+iframe {
+  width: 100%; /* Full width for responsive design */
+  height: 315px; /* Fixed height for the video */
+  border-radius: 5px; /* Slight rounding of video corners */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .moderate-stress-container {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    text-align: center; /* Centered text */
+  }
+
+  h2 {
+    font-size: 1.6rem; /* Smaller size for h2 on mobile */
+  }
+
+  .activity-buttons button {
+    font-size: 1.2rem; /* Smaller button font size */
+  }
+
+  .video-container {
+    margin-top: 15px;
+  }
+}
